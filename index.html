@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="app.js">
+</head>
+<header><img src="assets/Logo.png" alt=""></header>
+<body class="body">
+    
+    <main class="index">
+        <div class="index_div_content">
+            <textarea class="index_content_textarea" id="textArea" placeholder="Ingrese un texto" > </textarea>    
+            <div class="index_content_divwarning">
+                <img src="assets/bi_exclamation-circle-fill.png" alt="">
+                <p class="index_content_p">Solo letras minusculas y sin acentos</p>
+            </div> 
+            <div class="index_content_divbuttons">
+                <button class="index_content_encriptar" onclick=cambioPantallaDesencriptado() >Encriptar</button>
+                <button class="index_content_desencriptar" onclick=desencriptarTXT()>Desencriptar</button>
+            </div>
+        </div>
+        <div id="textAreaDesencriptado" class="divInvisible">
+            <div>
+                <textarea class="textAreaDesen" id="textArea2" >No hay texto</textarea>
+            </div>
+            
+            <div class="divBotonCopiar">
+                <button class="btnCopiar" onclick=copyToClipboard()> Copiar</button>
+            </div>
+            
+        </div>
+        
+        <div id="idDesencriptado" class="section_desencriptado" >
+            <div>
+                <img  src="assets/Muñeco.png" alt="">
+                
+            </div> 
+            <div class="div_desencriptado_mensaje">
+                 <h1 class="section_desencriptado_h1">Ningun mensaje fue encontrado</h1>
+                <p class="section_desencriptado_p">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+<footer class="footer">Creado por Hector Castro (2024)</footer>
+
+</html>
